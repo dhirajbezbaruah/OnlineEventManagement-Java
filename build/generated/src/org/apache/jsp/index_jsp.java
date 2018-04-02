@@ -1,0 +1,275 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE HTML>\n");
+      out.write("<html>\n");
+      out.write("\t<head>\n");
+      out.write("\t\n");
+      out.write("\n");
+      out.write("\t\n");
+      out.write("  \t<!-- Facebook and Twitter integration -->\n");
+      out.write("\t<meta property=\"og:title\" content=\"\"/>\n");
+      out.write("\t<meta property=\"og:image\" content=\"\"/>\n");
+      out.write("\t<meta property=\"og:url\" content=\"\"/>\n");
+      out.write("\t<meta property=\"og:site_name\" content=\"\"/>\n");
+      out.write("\t<meta property=\"og:description\" content=\"\"/>\n");
+      out.write("\t<meta name=\"twitter:title\" content=\"\" />\n");
+      out.write("\t<meta name=\"twitter:image\" content=\"\" />\n");
+      out.write("\t<meta name=\"twitter:url\" content=\"\" />\n");
+      out.write("\t<meta name=\"twitter:card\" content=\"\" />\n");
+      out.write("\n");
+      out.write("\t<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->\n");
+      out.write("\t\n");
+      out.write("\t<!-- Animate.css -->\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"css/animate.css\">\n");
+      out.write("\t<!-- Icomoon Icon Fonts-->\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"css/icomoon.css\">\n");
+      out.write("\t<!-- Bootstrap  -->\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"css/bootstrap.css\">\n");
+      out.write("\t<!-- Theme style  -->\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"css/style.css\">\n");
+      out.write("\n");
+      out.write("\t<!-- Modernizr JS -->\n");
+      out.write("\t<script src=\"js/modernizr-2.6.2.min.js\"></script>\n");
+      out.write("\t<!-- FOR IE9 below -->\n");
+      out.write("\t<!--[if lt IE 9]>\n");
+      out.write("\t<script src=\"js/respond.min.js\"></script>\n");
+      out.write("\t<![endif]-->\n");
+      out.write("\n");
+      out.write("\t</head>\n");
+      out.write("\t<body>\n");
+      out.write("\t\t\n");
+      out.write("\t<div class=\"fh5co-loader\"></div>\n");
+      out.write("\t\n");
+      out.write("\t<div id=\"page\">\n");
+      out.write("\t<nav class=\"fh5co-nav\" role=\"navigation\">\n");
+      out.write("\t\t<div class=\"container\">\n");
+      out.write("\t\t\t<div class=\"row\">\n");
+      out.write("\t\t\t\t<div class=\"col-xs-2\">\n");
+      out.write("\t\t\t\t\t<div id=\"fh5co-logo\"><a href=\"index.jsp\">Event Planning </a></div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class=\"col-xs-10 text-right menu-1\">\n");
+      out.write("\t\t\t\t\t<ul>\n");
+      out.write("\t\t\t\t\t\t<li class=\"active\"><a href=\"index.jsp\">Home</a></li>\n");
+      out.write("\t\t\t\t\t\t<li><a href=\"index.jsp\">Contact us</a></li>\n");
+      out.write("\t\t\t\t\t\t<li><a href=\"index.jsp\">About</a></li>\n");
+      out.write("\t\t\t\t\t\t<li class=\"has-dropdown\">\n");
+      out.write("\t\t\t\t\t\t\t<a href=\"#\">Register</a>\n");
+      out.write("\t\t\t\t\t\t\t<ul class=\"dropdown\">\n");
+      out.write("\t\t\t\t\t\t\t\t<li><a href=\"userregistration.jsp\">As User</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t<li><a href=\"organiserregistration.jsp\">As Organiser</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li class=\"has-dropdown\">\n");
+      out.write("\t\t\t\t\t\t\t<a href=\"#\">Login</a>\n");
+      out.write("\t\t\t\t\t\t\t<ul class=\"dropdown\">\n");
+      out.write("\t\t\t\t\t\t\t\t<li><a href=\"userlogin.jsp\">As User</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t<li><a href=\"organiserlogin.jsp\">As Organiser</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t<li class=\"btn-cta\"><a href=\"adminlogin.jsp\"><span>Admin</span></a></li>\n");
+      out.write("\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</nav>\n");
+      out.write("\n");
+      out.write("\t<header id=\"fh5co-header\" class=\"fh5co-cover\" role=\"banner\" style=\"background-image:url(images/img_bg_2.jpg);\">\n");
+      out.write("\t\t<div class=\"overlay\"></div>\n");
+      out.write("\t\t<div class=\"container\">\n");
+      out.write("\t\t\t<div class=\"row\">\n");
+      out.write("\t\t\t\t<div class=\"col-md-8 col-md-offset-2 text-center\">\n");
+      out.write("\t\t\t\t\t<div class=\"display-t\">\n");
+      out.write("\t\t\t\t\t\t<div class=\"display-tc animate-box\" data-animate-effect=\"fadeIn\">\n");
+      out.write("\t\t\t\t\t\t\t<h2>Search for your event to be organised</h3>\n");
+      out.write("\t\t\t\t\t\t\t<h4>ex.- Birthday, Wedding etc </h4>\n");
+      out.write("\t\t\t\t\t\t\t<div class=\"row\">\n");
+      out.write("\t\t\t\t\t\t\t\t<form class=\"form-inline\" id=\"fh5co-header-subscribe\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t<div class=\"col-md-8 col-md-offset-2\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"search\" placeholder=\"Enter your event\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-default\">Search</button>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t</form>\n");
+      out.write("\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</header>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t<div id=\"fh5co-services\" class=\"fh5co-bg-section\">\n");
+      out.write("\t\t<div class=\"container\">\n");
+      out.write("\t\t\t<div class=\"row\">\n");
+      out.write("\t\t\t\t<div class=\"col-md-4 col-sm-4 text-center\">\n");
+      out.write("\t\t\t\t\t<div class=\"feature-center animate-box\" data-animate-effect=\"fadeIn\">\n");
+      out.write("\t\t\t\t\t\t<span class=\"icon\">\n");
+      out.write("\t\t\t\t\t\t\t<i class=\"icon-eye\"></i>\n");
+      out.write("\t\t\t\t\t\t</span>\n");
+      out.write("\t\t\t\t\t\t<h3>Birthday?</h3>\n");
+      out.write("\t\t\t\t\t\t<p>Select a wide range of places to celibrate your birthday</p>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class=\"col-md-4 col-sm-4 text-center\">\n");
+      out.write("\t\t\t\t\t<div class=\"feature-center animate-box\" data-animate-effect=\"fadeIn\">\n");
+      out.write("\t\t\t\t\t\t<span class=\"icon\">\n");
+      out.write("\t\t\t\t\t\t\t<i class=\"icon-command\"></i>\n");
+      out.write("\t\t\t\t\t\t</span>\n");
+      out.write("\t\t\t\t\t\t<h3>Wedding?</h3>\n");
+      out.write("\t\t\t\t\t\t<p>Don't waste yor time searching for a wedding hall. We are your to fulfill your demand</p>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class=\"col-md-4 col-sm-4 text-center\">\n");
+      out.write("\t\t\t\t\t<div class=\"feature-center animate-box\" data-animate-effect=\"fadeIn\">\n");
+      out.write("\t\t\t\t\t\t<span class=\"icon\">\n");
+      out.write("\t\t\t\t\t\t\t<i class=\"icon-power\"></i>\n");
+      out.write("\t\t\t\t\t\t</span>\n");
+      out.write("\t\t\t\t\t\t<h3>Any other?</h3>\n");
+      out.write("\t\t\t\t\t\t<p>Dont miss your special occasion</p>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</div>\n");
+      out.write("\t\n");
+      out.write("\t<div id=\"fh5co-project\">\n");
+      out.write("\t\t<div class=\"container\">\n");
+      out.write("\t\t\t<div class=\"row animate-box\">\n");
+      out.write("\t\t\t\t<div class=\"col-md-8 col-md-offset-2 text-center fh5co-heading\">\n");
+      out.write("\t\t\t\t\t<span>Want Some Cool Stuff</span>\n");
+      out.write("\t\t\t\t\t<h2>Our Succesfull events</h2>\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<div class=\"project-content\">\n");
+      out.write("\t\t\t<div class=\"col-half\">\n");
+      out.write("\t\t\t\t<div class=\"project animate-box\" style=\"background-image:url(images/project-3.jpg);\">\n");
+      out.write("\t\t\t\t\t<div class=\"desc\">\n");
+      out.write("\t\t\t\t\t\t<span>ABC Restaurant</span>\n");
+      out.write("\t\t\t\t\t\t<h3>Birthday</h3>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class=\"col-half\">\n");
+      out.write("\t\t\t\t<div class=\"project-grid animate-box\" style=\"background-image:url(images/project-5.jpg);\">\n");
+      out.write("\t\t\t\t\t<div class=\"desc\">\n");
+      out.write("\t\t\t\t\t\t<span>Abc wedding Hall</span>\n");
+      out.write("\t\t\t\t\t\t<h3>Marriage</h3>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class=\"project-grid animate-box\" style=\"background-image:url(images/project-2.jpg);\">\n");
+      out.write("\t\t\t\t\t<div class=\"desc\">\n");
+      out.write("\t\t\t\t\t\t<span>and more</span>\n");
+      out.write("\t\t\t\t\t\t<h3>.................</h3>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</div>\n");
+      out.write("\t<div id=\"fh5co-testimonial\" class=\"fh5co-bg-section\">\n");
+      out.write("\t\t\n");
+      out.write("\t</div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t<div id=\"fh5co-started\">\n");
+      out.write("\t\t<div class=\"container\">\n");
+      out.write("\t\t\t<div class=\"row animate-box\">\n");
+      out.write("\t\t\t\t<div class=\"col-md-8 col-md-offset-2 text-center fh5co-heading\">\n");
+      out.write("\t\t\t\t\t<h2>Lets Get Started</h2>\n");
+      out.write("\t\t\t\t\t<p>Have any queries??? Feel free to contact us!</p>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class=\"row animate-box\">\n");
+      out.write("\t\t\t\t<div class=\"col-md-8 col-md-offset-2\">\n");
+      out.write("\t\t\t\t\t<form class=\"form-inline\">\n");
+      out.write("\t\t\t\t\t\t<div class=\"col-md-6 col-md-offset-3 col-sm-6\">\n");
+      out.write("\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-default btn-block\">Contact Us</button>\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t</form>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</div>\n");
+      out.write("\n");
+      out.write("\t\n");
+      out.write("\t</div>\n");
+      out.write("\n");
+      out.write("\t<div class=\"gototop js-top\">\n");
+      out.write("\t\t<a href=\"#\" class=\"js-gotop\"><i class=\"icon-arrow-up\"></i></a>\n");
+      out.write("\t</div>\n");
+      out.write("\t\n");
+      out.write("\t<!-- jQuery -->\n");
+      out.write("\t<script src=\"js/jquery.min.js\"></script>\n");
+      out.write("\t<!-- jQuery Easing -->\n");
+      out.write("\t<script src=\"js/jquery.easing.1.3.js\"></script>\n");
+      out.write("\t<!-- Bootstrap -->\n");
+      out.write("\t<script src=\"js/bootstrap.min.js\"></script>\n");
+      out.write("\t<!-- Waypoints -->\n");
+      out.write("\t<script src=\"js/jquery.waypoints.min.js\"></script>\n");
+      out.write("\t<!-- Main -->\n");
+      out.write("\t<script src=\"js/main.js\"></script>\n");
+      out.write("\n");
+      out.write("\t</body>\n");
+      out.write("</html>\n");
+      out.write("\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
